@@ -1,6 +1,6 @@
 Nesse código é calculado a raiz de uma função polinomial do segundo grau, e caso o delta seja menor do que zero é dito que a raíz é 
 imaginária, e usamos comandos como if/else, e o Scanner para os valores a, b, e c, no qual são valores reais respectivamente.
-Note que ao assumir o "Double" é a mesma coisa que dizer que esses valores são REAIS.
+Note que ao assumir o "double" é a mesma coisa que dizer que esses valores são REAIS.
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -12,14 +12,14 @@ public class primeiro {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Double a = sc.nextDouble();
-		Double b = sc.nextDouble();
-		Double c = sc.nextDouble();
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		double c = sc.nextDouble();
 		
-		Double delta = Math.pow(b, 2) - 4 * a * c;
+		double delta = Math.pow(b, 2) - 4 * a * c;
 		
-		Double x1 = (- b + Math.sqrt(delta)) / 2 * a;
-		Double x2 = (- b - Math.sqrt(delta)) / 2 * a;
+		double x1 = (- b + Math.sqrt(delta)) / 2 * a;
+		double x2 = (- b - Math.sqrt(delta)) / 2 * a;
 		
 		if (delta < 0) {
 			System.out.println("A raiz é imaginária");}
